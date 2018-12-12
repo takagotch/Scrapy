@@ -10,7 +10,7 @@ https://doc.scrapy.org/en/latest/index.html#
 pip install scrapy
 ```
 
-```
+```py
 ```
 
 ```
