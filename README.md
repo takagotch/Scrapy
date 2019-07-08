@@ -29,6 +29,14 @@ class BlogSpider(scrapy.Spider):
       yield response.follow(next_page.self.parse)
 ```
 
-```
+```py
+from scrapy.mail import MailSender
+mailer = MailSender()
+
+mailer = MailSender.from_settings(settings)
+
+mailer.send(to=["someone@example.com"], subject="Some subject", body="Some body", cc=["another@example.com"])s
+
+def parse_page():
 ```
 
